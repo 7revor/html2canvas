@@ -1,6 +1,6 @@
 {
-  "title": "html2canvas",
-  "name": "html2canvas",
+  "title": "@7revor/html2canvas",
+  "name": "@7revor/html2canvas",
   "description": "Screenshots with JavaScript",
   "main": "dist/html2canvas.js",
   "module": "dist/html2canvas.esm.js",
@@ -8,16 +8,16 @@
   "browser": "dist/html2canvas.js",
   "version": "1.0.0-rc.7",
   "author": {
-    "name": "Niklas von Hertzen",
-    "email": "niklasvh@gmail.com",
-    "url": "https://hertzen.com"
+    "name": "7revor",
+    "email": "7revor233@gmail.com",
+    "url": "https://7revor.com"
   },
   "engines": {
     "node": ">=8.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:niklasvh/html2canvas.git"
+    "url": "git@github.com:7revor/html2canvas.git"
   },
   "bugs": {
     "url": "https://github.com/niklasvh/html2canvas/issues"

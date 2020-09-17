@@ -1,13 +1,13 @@
 interface CSSStyleDeclaration {
-    textDecorationColor: string | null;
-    textDecorationLine: string | null;
-    overflowWrap: string | null;
+  textDecorationColor: string;
+  textDecorationLine: string;
+  overflowWrap: string;
 }
 
 interface DocumentType extends Node, ChildNode {
-    readonly internalSubset: string | null;
+  readonly internalSubset: string | null;
 }
 
 interface Document {
-    fonts: any;
+  fonts: any;
 }

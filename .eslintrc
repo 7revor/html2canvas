@@ -2,8 +2,7 @@
     "parser": "@typescript-eslint/parser",
     "extends":  [
         "plugin:@typescript-eslint/recommended",
-        "prettier/@typescript-eslint",
-        "plugin:prettier/recommended",
+        "prettier/@typescript-eslint"
     ],
     "parserOptions": {
         "project": "./tsconfig.json",
@@ -11,8 +10,7 @@
         "sourceType": "module"
     },
     "plugins": [
-        "@typescript-eslint",
-        "prettier"
+        "@typescript-eslint"
     ],
     "rules": {
         "no-console": ["error", { "allow": ["warn", "error"] }],
@@ -21,7 +19,6 @@
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-use-before-define": "off",
         "@typescript-eslint/no-unused-vars": "off",
-        "@typescript-eslint/class-name-casing": "off",
-        "prettier/prettier": "error"
+        "@typescript-eslint/class-name-casing": "off"
     }
 }

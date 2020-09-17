@@ -1,5 +1,27 @@
-html2canvas
+@7revor/html2canvas
 ===========
+
+# Why @7revor/html2canvas
+
+[issues#2107](https://github.com/niklasvh/html2canvas/issues/2107)
+
+add line into `src/render/canvas/canvas-renderer.ts`
+```js{3}
+renderTextWithLetterSpacing(text: TextBounds, letterSpacing: number) {
+      this.ctx.textBaseline = 'ideographic';
+        if (letterSpacing === 0) {
+            this.ctx.fillText(text.text, text.bounds.left, text.bounds.top + text.bounds.height);
+        } else {
+            const letters = toCodePoints(text.text).map(i => fromCodePoint(i));
+            letters.reduce((left, letter) => {
+                this.ctx.fillText(letter, left, text.bounds.top + text.bounds.height);
+
+                return left + this.ctx.measureText(letter).width;
+            }, text.bounds.left);
+        }
+    }
+```
+
 
 [Homepage](https://html2canvas.hertzen.com) | [Downloads](https://github.com/niklasvh/html2canvas/releases) | [Questions](http://stackoverflow.com/questions/tagged/html2canvas?sort=newest)
 
